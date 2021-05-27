@@ -1,0 +1,2 @@
+rootProject.name='Vaccine_Finder'
+include ':app'

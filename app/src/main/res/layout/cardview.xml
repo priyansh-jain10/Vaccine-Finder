@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="50dp"
+    android:id="@+id/cardViewLayout"
+    android:layout_marginVertical="30dp"
+    android:background="@drawable/edit_text_background"
+    android:layout_height="170dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/vaccine_center_layout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:src="@drawable/centername"
+                android:layout_height="40dp"
+                android:id="@+id/vaccine_center_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/vaccine_center_name"
+                android:layout_toRightOf="@id/vaccine_center_icon"/>
+
+        </RelativeLayout>
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/vaccineagelayout"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginHorizontal="10dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/minimum_age_text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:textSize="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:text="Minimum Age" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/minimum_age_text_result"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_below="@id/minimum_age_text" />-->
+
+<!--        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/vaccine_center_layout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/vaccine_name_layout">
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:id="@+id/vaccine_image"
+                android:layout_width="50dp"
+                android:src="@drawable/vaccine_name"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@id/vaccine_name"></ImageView>
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/vaccine_name"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/DoseCapacityLayout"
+            android:layout_below="@id/vaccine_center_layout"
+            >
+            <TableLayout
+                android:layout_width="150dp"
+                android:background="#f5f7b2"
+                android:layout_height="wrap_content"
+                >
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView android:text="Dose 1 Capacity"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"/>
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Dose1_capacity_text"
+                        android:layout_marginLeft="10dp"
+                        android:layout_column="2"
+                        android:text="199"/>
+
+
+                </TableRow>
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView android:text="Dose 2 Capacity"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"/>
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Dose2capacitytext"
+                        android:layout_marginLeft="10dp"
+                        android:layout_column="2"
+                        android:text="199"/>
+                </TableRow>
+
+            </TableLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/DoseCapacityLayout"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/vaccine_center_layout"
+            >
+            <TableLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#94d0cc"
+                >
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView android:text="From"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"/>
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fromtext"
+                        android:layout_marginLeft="10dp"
+                        android:layout_column="2"
+                        android:text="199"/>
+
+
+                </TableRow>
+                <TableRow android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView android:text="To"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"/>
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/totext"
+                        android:layout_marginLeft="10dp"
+                        android:layout_column="2"
+                        android:text="199"/>
+                </TableRow>
+
+            </TableLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/feelayout"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/rupeeimg"
+                android:src="@drawable/rupee"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@id/rupeeimg"
+                android:layout_marginRight="20dp"
+                android:textColor="#000000"
+                android:id="@+id/rupeetext"
+                android:text="250"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
